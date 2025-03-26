@@ -1,60 +1,30 @@
-h1{
-    text-align: center;
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
 }
 
-.container{
-    width: 460px;
-    height: 540px;
+.calculator {
+    width: 100%;
+    max-width: 400px;
     background-color: rgb(77, 75, 75);
-    margin: auto;
-    padding: 10px;
     border-radius: 10px;
-}
-p{
-    color: white;
-    font-size: 1.5rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#screen{
-    background-color: rgb(177, 205, 205);
-    height: 80px;
-    width: 440px;
-    margin: 5px;
-    font-size: 4rem;
-    text-align: right;
-    border-radius: 10px;
+p {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
-.button{
-    background-color: rgb(103, 100, 100);
-    color: white;
-    width: 92px;
-    height: 70px;
-    margin: 10px;
-    border-radius: 15px;
-    font-size: 2.5rem;
+
+#screen {
+    font-size: 2rem;
+    height: 60px;
+    background-color: #e9ecef;
 }
-.clear{
-    background-color: brown;
-}
-.operator{
-    background-color: rgb(166, 167, 168);
-}
-.button:hover{
-    border: 2px solid rgb(176, 36, 36);
-}
-@media screen and (max-width: 500px) {
-    .container {
-        max-width: 90%;
-        padding: 15px;
-    }
-    .button {
-        font-size: 1.5rem;
-        height: 50px;
-    }
-    #screen {
-        font-size: 1.5rem;
-        height: 60px;
-    }
+
+.btn {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
