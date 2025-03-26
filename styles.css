@@ -44,3 +44,17 @@ p{
 .button:hover{
     border: 2px solid rgb(176, 36, 36);
 }
+@media screen and (max-width: 500px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+    .button {
+        font-size: 1.5rem;
+        height: 50px;
+    }
+    #screen {
+        font-size: 1.5rem;
+        height: 60px;
+    }
+}
