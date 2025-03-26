@@ -1,49 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Calculator</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <h1>CALCULATOR</h1>
-        <div class="container">
-            <form action="">
-                <p>CASIO</p>
-                <input type="text" id="screen">
-                <br>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-                <input class="button number" type="button" value="7" onclick="btnClick(value)">
-                <input class="button number" type="button" value="8" onclick="btnClick(value)">
-                <input class="button number" type="button" value="9" onclick="btnClick(value)">
-                <input class="button operator" type="button" value="/" onclick="btnClick(value)">
+    <h1 class="text-center mt-3">CALCULATOR</h1>
 
-                <br>
-                <input class="button number" type="button" value="4" onclick="btnClick(value)">
-                <input class="button number" type="button" value="5" onclick="btnClick(value)">
-                <input class="button number" type="button" value="6" onclick="btnClick(value)">
-                <input class="button operator" type="button" value="*" onclick="btnClick(value)">
-
-                <br>
-                <input class="button number" type="button" value="1" onclick="btnClick(value)">
-                <input class="button number" type="button" value="2" onclick="btnClick(value)">
-                <input class="button number" type="button" value="3" onclick="btnClick(value)">
-                <input class="button operator" type="button" value="+" onclick="btnClick(value)">
-
-                <br>
-                <input class="button clear" type="button" value="C" onclick="clearScreen()">
-                <input class="button number" type="button" value="0" onclick="btnClick(value)">
-                <input class="button result" type="button" value="=" onclick="findResult()">
-                <input class="button operator" type="button" value="-" onclick="btnClick(value)">
-
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="calculator p-3">
+            <form>
+                <p class="text-white">CASIO</p>
+                <input type="text" id="screen" class="form-control text-end mb-2" readonly>
+                
+                <div class="row g-2">
+                    <div class="col-3"><input class="btn btn-dark w-100 py-3" type="button" value="7" onclick="btnClick(value)"></div>
+                    <div class="col-3"><input class="btn btn-dark w-100 py-3" type="button" value="8" onclick="btnClick(value)"></div>
+                    <div class="col-3"><input class="btn btn-dark w-100 py-3" type="button" value="9" onclick="btnClick(value)"></div>
+                    <div class="col-3"><input class="btn btn-warning w-100 py-3" type="button" value="/" onclick="btnClick(value)"></div>
+                    
+                    <div class="col-3"><input class="btn btn-dark w-100 py-3" type="button" value="4" onclick="btnClick(value)"></div>
+                    <div class="col-3"><input class="btn btn-dark w-100 py-3" type="button" value="5" onclick="btnClick(value)"></div>
+                    <div class="col-3"><input class="btn btn-dark w-100 py-3" type="button" value="6" onclick="btnClick(value)"></div>
+                    <div class="col-3"><input class="btn btn-warning w-100 py-3" type="button" value="*" onclick="btnClick(value)"></div>
+                    
+                    <div class="col-3"><input class="btn btn-dark w-100 py-3" type="button" value="1" onclick="btnClick(value)"></div>
+                    <div class="col-3"><input class="btn btn-dark w-100 py-3" type="button" value="2" onclick="btnClick(value)"></div>
+                    <div class="col-3"><input class="btn btn-dark w-100 py-3" type="button" value="3" onclick="btnClick(value)"></div>
+                    <div class="col-3"><input class="btn btn-warning w-100 py-3" type="button" value="+" onclick="btnClick(value)"></div>
+                    
+                    <div class="col-3"><input class="btn btn-danger w-100 py-3" type="button" value="C" onclick="clearScreen()"></div>
+                    <div class="col-3"><input class="btn btn-dark w-100 py-3" type="button" value="0" onclick="btnClick(value)"></div>
+                    <div class="col-3"><input class="btn btn-success w-100 py-3" type="button" value="=" onclick="findResult()"></div>
+                    <div class="col-3"><input class="btn btn-warning w-100 py-3" type="button" value="-" onclick="btnClick(value)"></div>
+                </div>
             </form>
-
-
-
         </div>
-        <script src="calc.js"></script>
-    </body>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="calc.js"></script>
+</body>
 </html>
